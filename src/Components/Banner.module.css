@@ -1,0 +1,40 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+.texto h1 {
+    font-size: 36pt;
+}
+
+.texto h1 span {
+    color: #E76868;
+}
+.texto p {
+    max-width: 30rem;
+    color: #E76868;
+    margin: 1rem 0;
+}
+
+.tenis {
+    width: 25rem;
+    transform: rotate(-35deg);
+    position: relative;
+    background: linear-gradient(#E76868, #E76868, tomato);
+    padding: 6.4rem 0;
+    border-radius: 50%;
+}
+.btn{
+    border: 1.4px solid #E76868;
+    background: #fff;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    margin-right: .5rem;
+    color: #E76868;
+    cursor: pointer;
+}
+

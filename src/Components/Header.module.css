@@ -1,0 +1,32 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6.5rem;
+}
+.logo{
+    width: 5rem;
+    background: #E76868;
+    border-radius: 5rem;
+    padding: .5rem 1rem;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 1px;
+}
+
+.list_item{
+    margin-right: 1rem;
+}
+
+.cart{
+    width: 5rem;
+    height: 2rem;
+    padding: .5rem 1rem;
+    margin-right: .5rem;
+    border: 1.5px solid #E76868;
+    border-radius: 5rem;
+    cursor: pointer;
+}

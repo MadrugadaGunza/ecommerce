@@ -1,0 +1,32 @@
+.newslatter{
+    color: #E76868;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 2rem 0;
+}
+
+.newslatter h1{
+    font-size: 30pt;
+}
+
+.form{
+    margin-top: .5rem;
+}
+
+.form input{
+    border: 1.5px solid #E76868;
+    border-radius: 5rem 0 0 5rem;
+    padding: .7rem 1rem;
+    width: 25rem;
+}
+.form input::placeholder{
+    color: #E76868;
+    font-size: 12pt;
+}
+.form button{
+    border: 1.5px solid #E76868;
+    border-left: none;
+    border-radius: 0 5rem 5rem 0;
+    padding: .7rem 1rem;
+}
