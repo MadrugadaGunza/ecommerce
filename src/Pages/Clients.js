@@ -1,7 +1,10 @@
+//styles
+import styles from './../Components/User/Table.module.css';
 import React from 'react'
 import useFetch from '../Hook/useFetch';
 import { GET_USER } from '../APIs/User';
-import Card from '../Components/User/Card';
+import TableItem from '../Components/User/TableItem';
+import Banner from '../Components/User/Banner';
 
 const Clients = () => {
     const { loading, error, data, request } = useFetch();
@@ -12,14 +15,27 @@ const Clients = () => {
     }, [request]);
     return (
         <div>
+            <Banner />
             {loading && <p>Loading...</p>}
             {error && <h1>Error: {error}</h1>}
-            {
-                data && data.map((user) => (
-                    <Card key={user.id} user={user} />
-                ))
-            }
-        </div>
+            <h1></h1>
+            <table className={styles.table}>
+                <thead>
+                    <tr>
+                        <th>Identificador</th>
+                        <th>Avatar</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Cargo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        data && data.map((user) => (<TableItem key={user.id} user={user} />))
+                    }
+                </tbody>
+            </table>
+        </div >
     )
 }
 

@@ -1,0 +1,12 @@
+.banner {
+    background: #E76868;
+    padding: 8rem 6rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.banner img{
+    width: 70rem;
+    height: 15rem;
+}

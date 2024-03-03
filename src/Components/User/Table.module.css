@@ -1,0 +1,15 @@
+.table{
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.table th,
+.table td{
+    border: 1px solid #E76868;
+    color: #E76868;
+}
+
+.table img{
+    border-radius: 5rem;
+}
